@@ -1,0 +1,40 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.guia-das-profissoes .cabecalho img{vertical-align:middle;}
+.guia-das-profissoes .cabecalho .title{padding-top:10px;}
+.guia-das-profissoes .box{padding:70px; background:#ecedc1; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; position:relative; color:#383a0f;}
+.guia-das-profissoes .box .img{background:url(../img/photo.png); width:236px; height:236px; position:absolute; top:-50px; right:0px;}
+.guia-das-profissoes .box .img img{position:absolute; top:35px; left:35px; width:150px; height:150px; -ms-transform: rotate(4deg); -webkit-transform: rotate(4deg); transform: rotate(4deg);}
+.guia-das-profissoes h1{color:#4e5111; font-family: 'BebasNeueBold'; padding:0px; margin:0px; font-weight:bold; font-size:60px; font-style:italic; display:block;}
+.guia-das-profissoes h2{color:#8c930f; font-family: 'BebasNeueBold'; padding:0px; margin:0px; font-size:64px; display:block;}
+.guia-das-profissoes .circle{width:170px; height:170px; background-color:#fff; border-radius:170px; -moz-border-radius:170px; -webkit-border-radius:200px; opacity:0.6; transition:0.5s ease-out; cursor:pointer;}
+.guia-das-profissoes .big{font-size:24px; line-height:26px;}
+.guia-das-profissoes .menus{margin-bottom:20px;}
+.guia-das-profissoes .menus a{color:#2a2b12; background:none; transition:0.5s linear; display:inline-block; padding:5px; padding-left:10px; padding-right:10px; font-family: 'BebasNeueBold'; font-size:20px; background-size:100% 100%;}
+.guia-das-profissoes .menus a:hover{opacity:0.8;}
+.guia-das-profissoes .menus .active{background:url(../img/btn-bg-profissoes.png) no-repeat; background-size:100% 100%;}
+.guia-das-profissoes .profile{font-size:16px; color:#000; padding-left:70px; position:relative;}
+.guia-das-profissoes .profile img{float:left; margin-right:20px; position:absolute; left:0px; top:0px;}
+/*RESPONSIVE*/
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.guia-das-profissoes .cabecalho .title{padding-top:0px; padding-bottom:20px; text-align:center !important;}
+	.guia-das-profissoes .draw{float:inherit; display:block; margin:auto; margin-bottom:20px;}
+	.guia-das-profissoes .circle{margin:auto; margin-bottom:10px;}
+	.guia-das-profissoes .circle + span{display:none;}
+	.guia-das-profissoes .cabecalho .text{font-size:24px;}
+	
+}
+@media only screen and (max-width: 760px){
+	.guia-das-profissoes .box{padding:30px;}
+	.guia-das-profissoes h2{margin-top:150px;}
+	.guia-das-profissoes .profile{padding-left:0px;}
+	.guia-das-profissoes .profile img{float:inherit; display:block; margin-bottom:20px; position:relative; left:inherit; top:inherit;}
+	.guia-das-profissoes h1, .guia-das-profissoes h2{font-size:40px;}
+}
+@media only screen and (max-width: 400px){
+
+}

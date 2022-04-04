@@ -1,0 +1,232 @@
+﻿<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>FUTURO FAMA</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="stylesheet" type="text/css" href="css/feira-das-profissoes.css">
+<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/tweenmax/TweenMax.min.js"></script>
+<script src="js/tweenmax/plugins/CSSPlugin.min.js"></script>
+<script src="js/tweenmax/easing/EasePack.min.js"></script>
+<script src="js/tweenmax/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/feira-das-profissoes.js"></script>
+<script type="text/javascript" src="js/service.ddlist.jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/service.ddlist.jquery.css">
+</head>
+
+<body>
+<div class="preloader"><i class="fa fa-spinner fa-spin"></i></div>
+<div id="allContent">
+<!--ALL CONTENT-->
+
+<header>
+<!--HEADER-->
+	<div class="container relative">
+    	<a href="#" class="logo"></a>
+        <div class="redes">
+        	<a href="#">Fale conosco</a>
+            <a href="#"><span>#</span></a>
+            <a href="#"><span>#</span></a>
+            <a href="#"><span>#</span></a>
+        </div>
+        <div class="menu">
+        	<a href="#" class="fadehover"><img src="img/btn01.png"></a>
+            <a href="#" class="relative fadehover"><span class="hands"></span><img src="img/btn02.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn03.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn04.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn05.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn06.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn07.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn08.png"></a>
+        </div>
+        <div class="menu-mobile">
+        	<div class="menu-hide">#</div>
+        	<a href="#" class="fadehover">O Programa</a>
+            <a href="#" class="fadehover">Teste de Habilidades</a>
+            <a href="#" class="fadehover">Fama nas escolas</a>
+            <a href="#" class="fadehover">Feira das Profissões</a>
+            <a href="#" class="fadehover">Guia das Profissões</a>
+            <a href="#" class="fadehover">Enem</a>
+            <a href="#" class="fadehover">Bolsas e creditos</a>
+            <a href="#" class="fadehover">Estude na fama</a>
+        </div>
+    
+    </div>
+<!--HEADER-->
+</header>
+
+<div class="modal fade inscricao-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+ 		<div class="modal-header">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	INSCREVA-SE
+      	</div>
+        <div class="modal-body">
+        <div class="loader">
+        	<i class="fa fa-spinner fa-spin"></i>
+        </div>
+        <div class="result text-center relative">
+        	<img src="img/inscricao-sucess.png" class="responsive">
+        </div>
+        <div class="form">
+            <form id="inscricao" method="post" action="submit.php">
+        	<div class="row">
+        		<div class="col-md-4 col-sm-4 text-right">
+                Nome Completo
+                </div>
+                <div class="col-md-8 col-sm-8">
+                <input type="text" name="nome" value="">
+                </div>
+        		<div class="col-md-4 col-sm-4 text-right">
+                Email
+                </div>
+                <div class="col-md-8 col-sm-8">
+                <input type="text" name="email" value="">
+                </div>
+        		<div class="col-md-6 col-sm-5 text-right">
+                Data de Nascimento
+                </div>
+                <div class="col-md-6 col-sm-7">
+                <input type="text" name="nascimento" placeholder="dd/mm/aa" value="">
+                </div>
+        		<div class="col-md-4 col-sm-4 text-right">
+                Telefone fixo
+                </div>
+                <div class="col-md-8 col-sm-8">
+                <input type="text" name="telefone" value="">
+                </div>
+        		<div class="col-md-4 col-sm-4 text-right">
+                Telefone Celular
+                </div>
+                <div class="col-md-8 col-sm-8">
+                <input type="text" name="celular" value="">
+                </div>
+        		<div class="col-md-6 col-sm-5 text-right">
+                Quando vai concluir <br>o Ensino Médio?
+                </div>
+                <div class="col-md-6 col-sm-7">
+                        <select name="ano" id="ano">
+                    		<option value="0" selected>Ano</option>
+                    		<option>Olaaaa</option>
+                    	</select>
+                </div>
+        		<div class="col-md-4 col-sm-4 text-right">
+                Colégio
+                </div>
+                <div class="col-md-8 col-sm-8">
+                <input type="text" name="colegio" value="">
+                </div>
+        		<div class="col-md-4 col-sm-4 text-right">
+                Cidade
+                </div>
+                <div class="col-md-8 col-sm-8">
+                <input type="text" name="cidade" value="">
+                </div>
+        	</div>
+            </form>
+            <img src="img/btn-finalizar.png" class="hover fadehover btn-inscrever"> 
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="body feira-das-profissoes">
+<!--BODY-->
+	<div class="container">
+    	<div class="cabecalho">
+    		<div class="row">
+				<div class="col-md-7 relative text-right title">
+            		<img src="img/title-feira-das-profissoes.png" class="responsive">
+            	</div>
+				<div class="col-md-5 relative ">
+            		<img src="img/draw-feira-das-profissoes.png" class="responsive">
+            	</div>
+        	</div>
+            <div class="box">
+            	<span>Na Feira das Profissões, alunos do Ensino Médio, comunidade, empresas e a Faculdade Fama se encontram para falar do seu futuro. </span>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="text">
+            <div class="row">
+            	<div class="col-md-6">
+                	<div class="space"></div>
+                	Além de conhecer os cursos da <b>FAMA</b> e a sua grande infraestrutura, você pode conversar com profissionais, entender o dia a dia das profissões e a realidade das empresas, acumulando informações para te ajudar na escolha de qual carreira seguir.
+                	<div class="space"></div>
+                    <div class="space"></div>
+                </div>
+                <div class="col-md-6 relative">
+                	<img src="img/chart-feira-das-profissoes.png" class="responsive">
+                    <img src="img/btn-clique.png" class="responsive fadehover btn-clique" data-toggle="modal" data-target=".inscricao-modal">
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="space"></div>
+    </div>
+<!--BODY-->
+</div>
+<div class="space"></div>
+<div class="space"></div>
+<footer>
+	<div class="container">
+		<div class="row">
+        	<div class="col-md-6 col-sm-6">
+            	<div class="row">
+                	<div class="col-md-6">
+            			<span>O Futuro FAMA</span>
+                        <div class="space"></div>
+                        <a href="#" class="link">O Programa</a>
+                        <a href="#" class="link">Teste Vocacional</a>
+                        <a href="#" class="link">FAMA nas Escolas</a>
+                        <a href="#" class="link">Feira das Profissões</a>
+                        <div class="space"></div>
+            		</div>
+                	<div class="col-md-6">
+            			<span>Faculdade FAMA</span>
+                        <div class="space"></div>
+                        <a href="#" class="link">ENEM</a>
+                        <a href="#" class="link">Guia das Profissões</a>
+                        <a href="#" class="link">Bolsas e Créditos</a>
+                        <a href="#" class="link">Estude na FAMA</a>
+                        <a href="#" class="link">Contato</a>
+                        <div class="space"></div>
+            		</div>
+            	</div>
+            </div>
+        	<div class="col-md-6 col-sm-6">
+            	<div class="row">
+                	<div class="col-md-8">
+            			Avenida Fernando Costa, nº49, Vila Jaiara, Anápolis-GO.<br>
+                        CEP: 75.064-780<br>
+                        Fone: (62)3310-0000<br>
+                        <div class="space"></div>
+            		</div>
+                    <div class="col-md-4 relative">
+                    	<a href="#"><img src="img/footer-brand.jpg" class="responsive"></a>
+                        <div class="space"></div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="text-center credits">
+        	DESENVOLVIDO POR <a href="#"><img src="img/footer-credits.png"></a>
+        </div>
+	</div>
+</footer>
+
+
+<!--ALL CONTENT-->
+</div>
+</body>
+</html>

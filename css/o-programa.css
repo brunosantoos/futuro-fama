@@ -1,0 +1,26 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.oprograma .cabecalho img{vertical-align:middle;}
+.oprograma .cabecalho .title{padding-top:10px;}
+.oprograma .box{padding:70px; background:#ecedc1; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; position:relative; color:#383a0f;}
+.oprograma .box span{font-family: 'BebasNeueBold'; color:#414141; font-size:30px; display:block;}
+.oprograma .box .big{font-size:18px;}
+.oprograma .box span{font-family: 'BebasNeueBold'; font-size:30px;}
+.oprograma .draw{float:left;}
+/*RESPONSIVE*/
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.oprograma .cabecalho .title{padding-top:0px; padding-bottom:20px; text-align:center !important;}
+	.oprograma .draw{float:inherit; display:block; margin:auto; margin-bottom:20px;}
+	
+}
+@media only screen and (max-width: 760px){
+	.oprograma .box{padding:30px;}
+
+}
+@media only screen and (max-width: 400px){
+
+}

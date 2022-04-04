@@ -1,0 +1,35 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.bolsas .cabecalho img{vertical-align:middle;}
+.bolsas .cabecalho .title{padding-top:70px;}
+.bolsas .cabecalho .text{font-family: 'BebasNeueBold'; font-size:36px; text-align:center; padding-left:40px; padding-right:40px;}
+.bolsas .box{padding:70px; background:#ecedc1; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; position:relative; color:#383a0f;}
+.bolsas h1{color:#414141; padding:0px; margin:0px; font-weight:bold; font-size:25px; display:block; margin-bottom:10px;}
+.bolsas h2{color:#414141; padding:0px; margin:0px; font-size:24px; display:block; margin-bottom:10px;}
+.bolsas .container{max-width:900px;}
+.bolsas .circle{width:140px; height:140px; background-color:#fff; border-radius:140px; -moz-border-radius:140px; -webkit-border-radius:140px; opacity:0.6; margin:auto; background:#FFF no-repeat center; overflow:hidden; transition:0.5s ease-out; cursor:pointer;}
+.bolsas .programas{background:url(../img/brand-programas.png) no-repeat center #fff; margin:auto;}
+.bolsas .circle + span{background:url(../img/icon-plus.png); width:25px; height:25px; background-size:100% 100%; position:absolute; top:calc(50% - 15px); right:-12px; display:inline-block;}
+.bolsas .circle:hover{opacity:1;}
+.bolsas .active{opacity:1;}
+.owl-item:last-child span{display:none;}
+/*RESPONSIVE*/
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.bolsas .cabecalho .title{padding-top:0px; padding-bottom:20px; text-align:center !important;}
+	.bolsas .draw{float:inherit; display:block; margin:auto; margin-bottom:20px;}
+	.bolsas .circle{margin:auto; margin-bottom:10px;}
+	.bolsas .circle + span{display:none;}
+	.bolsas .cabecalho .text{font-size:24px;}
+	
+}
+@media only screen and (max-width: 760px){
+	.bolsas .box{padding:30px;}
+
+}
+@media only screen and (max-width: 400px){
+
+}

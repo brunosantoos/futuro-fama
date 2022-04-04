@@ -1,0 +1,113 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.modal-body{padding:40px; margin:auto; text-align:center; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; position:relative; color:#333; background-color:#fff;}
+.modal-content{max-width:500px; margin:auto; }
+.gabarito-modal a{text-decoration:underline !important; font-size:12px;}
+.gabarito-modal a img{margin-right:10px; margin-left:10px;}
+.gabarito-modal{font-size:16px;}
+.gabarito-modal .gabarito{margin-bottom:20px;}
+.calendario span{border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; display:inline-block; font-size:29px; color:#7a7a7a; background-color:#ffc2c2; padding:2px; vertical-align:middle; margin-right:40px; width:100px; text-align:center;}
+.calendario{font-size:20px; margin-bottom:20px; text-align:left;}
+
+/*DICAS */
+.enem .cabecalho img{vertical-align:middle;}
+.enem .cabecalho .title{padding-top:10px;}
+.enem .cabecalho .links{text-align:center; margin-top:30px;}
+.enem .cabecalho .links a{display:inline-block; margin:15px;}
+.enem .title-dicas{padding-right:300px;}
+.enem .box{padding:20px; padding-left:50px; padding-right:50px; max-width:1000px; margin:auto; text-align:center; border:1px solid #6e852b; font-size:14px;  border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; position:relative; color:#6e852b;}
+.enem .dicas .dica{color:#000; font-size:13px; min-height:200px; margin:0 150px;}
+.enem .dicas .dica img{float:left; margin-right:30px;}
+.enem .dicas .dica span{font-weight:bold; font-size:16px; display:block;}
+.enem .dicas .dica-esq img{float:right; margin-left:30px;}
+
+/*IMPORTANCIA */
+.enem .timeline .event{color:#231f20; font-size:16px; min-height:200px;}
+.enem .timeline .event span{font-weight:bold; font-size:20px; display:block;}
+.enem .timeline .event .col-md-8{border-left:#6b6f1e 10px solid; padding-left:40px; padding-bottom:30px; min-height:250px;}
+.enem .timeline .event:last-child .col-md-8{border:none;}
+.enem .timeline .event .mark{border-radius:40px; -moz-border-radius:40px; -webkit-border-radius:40px; width:40px; height:40px; position:absolute; right:-25px; top:0px; background:#6b6f1e;}
+
+.enem .links{text-align:center;}
+.enem .links a{display:inline-block; padding-bottom:18px; font-family: 'Montserrat'; font-weight:900; color:#647c0f; font-size:14px; text-transform:uppercase; margin:10px;}
+.enem .active{color:#EDEC02 !important;}
+
+/*PROVAO*/
+.enem .img-provao{position:absolute; top:-50px; left:0px;}
+.enem .img-provao .btn-participe{position:absolute; bottom:-60px; left:40px;}
+.enem .title-provao{padding-right:100px;}
+.enem .premios .col-md-4{vertical-align:middle;}
+.enem .box-color{padding:40px; padding-right:250px; margin-right:200px; text-align:left; background:#ecedc1; font-size:27px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; position:relative; color:#343616;}
+.enem .box-color span{display:block; padding-bottom:20px; border-bottom:1px #343616 solid; font-size:12px; margin-bottom:10px;}
+.enem .box-color span img{margin-left:20px; display:inline-block; float:right;}
+.enem .box-color .box-calendario{position:absolute; right:-200px; top:10px;}
+.enem .box-color .box-calendario .btn-calendario{position:absolute; bottom:0px; right:calc(50% - 110px);}
+
+/*RESULTADO */
+.enem .search {max-width:800px; position:relative; margin:auto;}
+.enem .search input{border-radius:10px; padding-right:50px; -moz-border-radius:10px; -webkit-border-radius:10px; font-family: 'BebasNeueBook'; background:#fff; padding:15px; border:none; width:100%; margin-bottom:20px; transition:0.5s linear; color:#333; font-size:26px;}
+.enem .search input:focus{background:#ecedc1;}
+.enem .search .lupa{position:absolute; right:15px; top:15px; width:38px; height:38px; background:url(../img/icon-lupa.png); cursor:pointer;}
+.enem .result{max-width:800px; padding-left:50px; margin:auto; -ms-transform: rotate(-1deg); -webkit-transform: rotate(-1deg); transform: rotate(-1deg);}
+.enem .result .col-md-3{font-family: 'BebasNeueBold'; font-size:60px; line-height:60px; border-right:1px #fff solid; }
+.enem .result .col-md-9{font-size:22px; font-weight:bold; padding-top:10px;}
+.enem .box-result{padding:40px; max-width:800px; margin:auto; text-align:center; background:#ecedc1; font-size:27px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; position:relative; color:#343616;}
+.enem .box-result .aluno{color:#5c5c54; font-size:20px; font-family: 'BebasNeueBook'; padding-bottom:20px;}
+.enem .box-result .aluno span{font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; width:120px; text-align:center; color:#fff; background-color:#499c0d; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; display:inline-block; padding:7px; letter-spacing:2px; vertical-align:middle; font-size:14px; text-transform:uppercase; float:right;}
+.enem .box-result .aluno .reprovado{background:#D00609;}
+.enem .box-result table{width:100%; font-family: 'BebasNeueBold'; color:#5c5c54; font-size:24px;}
+.enem .box-result table .pos{font-family: 'BebasNeueBold'; position:relative;}
+.enem .box-result table .pos span{width:50px; height:10px; background-color:rgba(168,215,21,1.00); border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; -ms-transform: rotate(-2deg); /* IE 9 */ -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */transform: rotate(-2deg); display:block; position:absolute; left:-60px; top:5px;}
+.enem .abas a{ margin:20px; width:50%;}
+.enem .abas .active{ }
+.enem .more{color:#7f8422; font-size:22px; font-family: 'BebasNeueBold';}
+.enem .more a{display:inline-block; padding:5px 20px; color:#fff; margin-left:10px; cursor:pointer; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; background-color:#f05112;}
+/*PROVAS ANTERIORES*/
+.enem .box-provas{padding-left:240px; padding-right:240px;}
+.enem .donwloads{text-align:center;}
+.enem .donwloads a{display:inline-block; margin:2px; background:url(../img/btn-enem.png); width:162px; height:47px; color:#b9c300; font-size:24px; font-family: 'BebasNeueBold'; text-align:center; padding-top:5px;}
+.enem #gabarito .title{font-family: 'BebasNeueBold'; color:#fff; font-size:30px;}
+/*RESPONSIVE*/
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.enem .cabecalho .title{padding-top:0px; padding-bottom:20px; text-align:center !important;}
+	.enem .dicas .dica{font-size:16px;}
+	.enem .dicas .dica span{font-size:32px;}
+	.enem .dicas .dica img{max-width:260px;}
+	.enem .title-dicas{padding-right:0px;}
+	.enem .esquema{display:none;}
+	.enem .img-provao{position:relative; top:inherit; left:inherit; margin-bottom:0px; display:inline-block; margin-top:20px;}
+	.enem .img-provao img{display:block; max-width:260px;}
+	.enem .img-provao .btn-participe{position:relative; bottom:inherit; left:inherit; margin-top:-70px; display:block;}
+	.enem .title-provao{padding-right:0px;}
+	.premios .col-md-4:last-child{margin-top:20px;}
+	.enem .box-color{padding:20px; margin-right:0px; font-size:20px}
+	.enem .box-color .box-calendario{position:relative; right:inherit; top:inherit; text-align:center; margin-bottom:40px; margin-top:20px;}
+	.enem .box-color .box-calendario .btn-calendario{bottom:inherit; top:calc(100% - 20px);}
+	.enem .box-provas{padding-left:50px; padding-right:50px;}
+	
+}
+@media only screen and (max-width: 760px){
+	.enem .dicas .dica img{float:inherit; margin-left:0px;}
+	.enem .timeline .event .col-md-8{border-left:none;}
+	.enem .timeline .event .mark{display:none;}
+	.enem .box-color span img{float:inherit; display:block; margin-bottom:20px; margin-left:0px;}
+	.enem .result .col-md-3{border:none;}
+	.enem .result .col-md-9{font-size:16px;}
+	.enem .result{text-align:center;}
+	.enem .box-result .aluno{min-width:100%;}
+	.enem .result{padding-left:0px; margin-bottom:20px; max-width:100%; overflow:hidden;}
+	.enem .box-provas{padding-left:30px; padding-right:30px;}
+
+}
+@media only screen and (max-width: 400px){
+	.enem .box-result .aluno {text-align:center;}
+	.enem .box-result .aluno span{float:inherit; display:block; margin:auto; margin-bottom:10px;}
+
+}
+
+table tr td{
+	color: black;
+}

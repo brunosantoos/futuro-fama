@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>FUTURO FAMA</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="stylesheet" type="text/css" href="css/teste-de-habilidades.css">
+<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/tweenmax/TweenMax.min.js"></script>
+<script src="js/tweenmax/plugins/CSSPlugin.min.js"></script>
+<script src="js/tweenmax/easing/EasePack.min.js"></script>
+<script src="js/tweenmax/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/feira-das-profissoes.js"></script>
+<script type="text/javascript" src="js/service.ddlist.jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/service.ddlist.jquery.css">
+</head>
+
+<body>
+<div class="preloader"><i class="fa fa-spinner fa-spin"></i></div>
+<div id="allContent">
+<!--ALL CONTENT-->
+
+<header>
+<!--HEADER-->
+	<div class="container relative">
+    	<a href="#" class="logo"></a>
+        <div class="redes">
+        	<a href="#">Fale conosco</a>
+            <a href="#"><span><i class="fa fa-facebook"></i></span></a>
+            <a href="#"><span><i class="fa fa-instagram"></i></span></a>
+            <a href="#"><span><i class="fa fa-star"></i></span></a>
+        </div>
+        <div class="menu">
+        	<a href="#" class="fadehover"><img src="img/btn01.png"></a>
+            <a href="#" class="relative fadehover"><span class="hands"></span><img src="img/btn02.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn03.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn04.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn05.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn06.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn07.png"></a>
+            <a href="#" class="fadehover"><img src="img/btn08.png"></a>
+        </div>
+        <div class="menu-mobile">
+        	<div class="menu-hide">#</div>
+        	<a href="#" class="fadehover">O Programa</a>
+            <a href="#" class="fadehover">Teste de Habilidades</a>
+            <a href="#" class="fadehover">Fama nas escolas</a>
+            <a href="#" class="fadehover">Feira das Profissões</a>
+            <a href="#" class="fadehover">Guia das Profissões</a>
+            <a href="#" class="fadehover">Enem</a>
+            <a href="#" class="fadehover">Bolsas e creditos</a>
+            <a href="#" class="fadehover">Estude na fama</a>
+        </div>
+    
+    </div>
+<!--HEADER-->
+</header>
+
+<div class="body cadastro-quiz">
+<!--BODY-->
+	<div class="container relative">
+    <div class="row">
+    	<div class="col-lg-4 col-md-5 relative">
+        	<img src="img/title-teste-de-habilidades.png" class="responsive">
+        	<div class="txt">
+				<b>A Fama sabe que escolher uma<br> profissão não é nada fácil.</b>
+    			<div class="padding"></div>
+    			A Fama sabe que escolher uma profissão não é nada fácil.
+				<br><br>
+				Por isso, elaborou um teste rapidinho com perguntas sobre o seu estilo de vida, que direcionam para as profissões que mais combinam com você. 
+				<br><br>
+				Vamos lá?
+                <div class="space"></div>
+                <div class="text-right">
+            	<img src="img/draw-teste-de-habilidades.png" class="responsive">
+                </div>
+            </div>
+    	</div>
+        <div class="col-lg-8 col-md-7 relative">
+        	<div class="box">
+            	<div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+                <div class="row">
+        			<div class="col-md-2 text-right"></div>
+                	<div class="col-md-10">
+            		<img src="img/btn-facebook.png" class="fadehover hover responsive" id="facebook_login">
+                	<div class="space"></div>
+                	<div class="line"></div>
+                	<div class="space"></div>
+                	<div class="space"></div>
+                	</div>
+        			<div class="col-md-3 text-right">
+                	Nome
+                	</div>
+                	<div class="col-md-9">
+                	<input type="text" name="nome" value="">
+                	</div>
+        			<div class="col-md-3 text-right">
+                	Email
+                	</div>
+                	<div class="col-md-9">
+               		<input type="text" name="email" value="">
+                	</div>
+        			<div class="col-md-3 text-right">
+                	Telefone
+                	</div>
+                	<div class="col-md-9">
+                	<input type="text" name="telefone" value="">
+                	</div>
+        			<div class="col-md-3 col-sm-4 text-right">
+                	Terminou o Ensino Médio?
+                	</div>
+                    <div class="col-md-9 col-sm-8">
+                    	<input type="radio" name="ensino" id="ensino01" value="sim" /><label for="ensino01">Sim</label>
+                        <input type="radio" name="ensino" id="ensino02" value="nao" /><label for="ensino02">Não</label>
+                        <select name="ano" id="ano">
+                    		<option value="0" selected>Ano</option>
+                    		<option>Olaaaa</option>
+                    	</select>
+                    </div>
+                </div>
+            	<img src="img/btn-prosseguir.png" class="fadehover hover responsive btn-prosseguir">
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="row">
+    	<div class="col-md-7 credits">
+    * Este é um questionário que busca orientá-lo na escolha da sua futura profissão. Quanto mais sincero você for em suas respostas maior a probabilidade de um direcionamento correto para a profissão que mais atende às suas características pessoais. Este teste não é validado científicamente. 
+<br><br>
+Criado e revisado pela Professora Titular da Faculdade Fama Eliangela Silva.
+		</div>
+	</div>
+    </div>
+<!--BODY-->
+</div>
+<div class="space"></div>
+<div class="space"></div>
+<footer>
+	<div class="container">
+		<div class="row">
+        	<div class="col-md-6 col-sm-6">
+            	<div class="row">
+                	<div class="col-md-6">
+            			<span>O Futuro FAMA</span>
+                        <div class="space"></div>
+                        <a href="#" class="link">O Programa</a>
+                        <a href="#" class="link">Teste Vocacional</a>
+                        <a href="#" class="link">FAMA nas Escolas</a>
+                        <a href="#" class="link">Feira das Profissões</a>
+                        <div class="space"></div>
+            		</div>
+                	<div class="col-md-6">
+            			<span>Faculdade FAMA</span>
+                        <div class="space"></div>
+                        <a href="#" class="link">ENEM</a>
+                        <a href="#" class="link">Guia das Profissões</a>
+                        <a href="#" class="link">Bolsas e Créditos</a>
+                        <a href="#" class="link">Estude na FAMA</a>
+                        <a href="#" class="link">Contato</a>
+                        <div class="space"></div>
+            		</div>
+            	</div>
+            </div>
+        	<div class="col-md-6 col-sm-6">
+            	<div class="row">
+                	<div class="col-md-8">
+            			Avenida Fernando Costa, nº49, Vila Jaiara, Anápolis-GO.<br>
+                        CEP: 75.064-780<br>
+                        Fone: (62)3310-0000<br>
+                        <div class="space"></div>
+            		</div>
+                    <div class="col-md-4 relative">
+                    	<a href="#"><img src="img/footer-brand.jpg" class="responsive"></a>
+                        <div class="space"></div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="text-center credits">
+        	DESENVOLVIDO POR <a href="#"><img src="img/footer-credits.png"></a>
+        </div>
+	</div>
+</footer>
+
+
+<!--ALL CONTENT-->
+</div>
+</body>
+</html>

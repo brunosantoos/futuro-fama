@@ -1,0 +1,31 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.contato .cabecalho{ font-family: 'BebasNeueBold'; font-size:30px;}
+.contato .text{color:#383a0f; font-size:20px; max-width:800px; margin:auto; }
+.contato .form{max-width:600px; margin: 40px auto 0; font-size:16px;}
+.contato .form input{border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; background:#fff; padding:10px; border:none; width:100%; margin-bottom:20px; transition:0.5s linear; color:#333;}
+.contato .form input:focus{background:#ecedc1;}
+.contato .form textarea{border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; height:200px; background:#fff; padding:10px; border:none; width:100%; margin-bottom:20px; transition:0.5s linear; color:#333;}
+.contato .form textarea:focus{background:#ecedc1;}
+.contato .form button{border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; outline:none; display:inline-block; background:#f8f900; padding:10px; padding-left:50px; padding-right:50px; border:none; margin-bottom:20px; transition:0.5s linear; color:#797a2d;}
+.contato .form button:hover{background:#797a2d; color:#f8f900;}
+.contato .form .loader{font-size:30px; display:none;}
+/*RESPONSIVE*/
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media only screen and (max-width: 760px){
+	.contato .form .col-md-4{text-align:left !important;}
+	.contato .form input{margin-top:10px;}
+	.contato .form textarea{margin-top:10px;}
+	.contato .cabecalho .col-md-4{border-right:none;}
+	.contato .cabecalho{text-align:center;}	
+
+}
+@media only screen and (max-width: 400px){
+
+}

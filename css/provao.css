@@ -1,0 +1,61 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.provao .links{text-align:center;}
+.provao .links span{display:inline-block; font-family: 'Montserrat Black', arial; color:#495817; font-size:16px; text-transform:uppercase; padding:20px; padding-bottom:20px; transition:0.5s ease-out; cursor:pointer;}
+.provao .links span:hover{color:#FFF;}
+.provao .links .active{color:#FFF;}
+.provao .nodes .node{text-align:center;}
+.provao .box-datas .data{position:relative; font-family: 'Montserrat Black', arial; text-transform:uppercase; font-size:14px; padding-left:120px; padding-top:20px; color:#567000; text-align:center; min-height:150px;}
+.provao .box-datas .data b{font-family: 'Montserrat Black', arial;}
+.provao .box-datas .data img{width:110px; height:110px; border-radius:138px; height:auto; position:absolute; left:0px; top:0px;}
+.provao .box-datas .data span{font-size:24px; color:#3f5200; font-family: 'Montserrat Black', arial; display:block;  display:block;}
+.provao .btn-download{background:#eb4145; font-family: 'Montserrat Black', arial; text-transform:uppercase; color:#fff; font-size:18px; padding:10px; background:url(../img/btn-download.png) no-repeat #eb4145; background-position:10px 10px; padding-left:40px; display:block; max-width:350px; cursor:pointer; margin:auto; margin-bottom:10px; transition:0.5s ease-out;}
+.provao .btn-download:hover{background-color:rgba(70,106,7,1.00);}
+.provao table{width:100%; max-width:900px; margin:auto;}
+.provao table tr{background:#749104;}
+.provao table td{ color:#fff; border:5px solid #9dc700;}
+.provao table .btn-download{background-color:rgba(0,0,0,0.00); padding:5px 5px 5px 30px; background-position:10px 10px; font-family:inherit; margin-bottom:0px;}
+.provao table tr:nth-child(odd) {background-color: #80a100;}
+
+.provao .box {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #6e852b;
+    font-size: 14px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: relative;
+    color: #6e852b;
+}
+
+.provao .mais-resultados h4 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #c84719;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 100px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1200px) {
+	.provao .links span{font-size:14px; padding:15px; padding-bottom:20px;}
+}
+@media (max-width: 992px) {
+
+	
+}
+@media only screen and (max-width: 760px){
+	.provao .box-datas .data{text-align:left;}
+
+}
+@media only screen and (max-width: 400px){
+
+
+}

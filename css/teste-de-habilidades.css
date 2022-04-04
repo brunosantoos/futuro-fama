@@ -1,0 +1,227 @@
+﻿@charset "utf-8";
+/* CSS Document */
+b{font-size:16px;}
+
+
+/*HOME*/
+.home-quiz .txt{max-width:350px; padding:30px; font-size:15px;}
+.home-quiz .btn{margin-left:0px; margin-top:20px;}
+
+/*CADASTRO*/
+.cadastro-quiz .txt{max-width:350px; margin-top:-50px; font-size:15px;}
+.cadastro-quiz .btn{margin-left:0px; margin-top:20px; display:block;}
+.cadastro-quiz .draw{margin-top:-50px;}
+.cadastro-quiz .credits{font-size:10px;}
+.cadastro-quiz .box{max-width:631px; min-height:730px; background:url(../img/cadastro-bg.png); background-size:100% 100%; padding:20px; padding-right:40px; padding-top:150px; margin-bottom:50px; font-size:18px; text-align:center; position:relative;}
+.cadastro-quiz .box .line{margin-top:20px; margin-bottom:20px; height:1px; max-width:300px; margin:auto; background-color:#fff;}
+.cadastro-quiz input{border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; background:#fff; padding:15px; border:none; width:100%; margin-bottom:20px; transition:0.5s linear; color:#333;}
+.cadastro-quiz input:focus{background:#ecedc1;}
+.cadastro-quiz label{font-weight:normal !important;}
+.cadastro-quiz .btn-prosseguir{position:absolute; bottom:-30px; left:150px;}
+.cadastro-quiz .loader{position:absolute; top:80px; right:30px; font-size:40px; display:none;}
+.cadastro-quiz .wellcome{font-family: 'BebasNeueBold'; color:#fff; font-size:70px; display:none;}
+
+/*QUIZ*/
+.quiz .container{background:url(../img/draw2.png) no-repeat right;}
+.quiz .header{position:relative; padding:20px; padding-top:0px;}
+.quiz .header .answer{position:absolute; bottom:-20px; left:calc(50% - 200px); z-index:2;}
+.quiz .box{background-color:#fff; padding:30px; padding-top:50px; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; height:500px; position:relative;}
+.quiz .character{margin-right:0px; float:right;}
+.quiz .question{font-size:31px; color:#231f20; font-family: 'BebasNeueBook'; width:90%; line-height:31px;}
+.quiz .question span{font-family: 'BebasNeueBold';}
+.quiz ul{list-style:none; margin:0px; padding:0px; margin-left:100px; margin-top:10px;}
+.quiz li{list-style:none; margin-bottom:10px;}
+.quiz label{color:#231f20; font-size:24px; font-family: 'BebasNeueBold';}
+.quiz .buttons{position:absolute; bottom:-25px; left:90px;}
+
+/*QUIZ*/
+.result .container{min-height:770px;}
+.result .ball{max-width:777px; width:100%; height:719px;  background-size:100% 100%; position:absolute; top:-40px; right:0px;}
+.result .ball .content{width:100%; height:100%; background:url(../source/results/administracao.png) no-repeat;  background-size:100% 100%; position:absolute; top:20px;}
+.result .ball .content .go{width:28px; height:26px; background:url(../img/arrow-quiz.png); position:absolute; bottom:80px; right:calc(50% - 135px); z-index:10;}
+.result .ball .content .back{width:28px; height:26px; background:url(../img/arrow-quiz.png); position:absolute; bottom:80px; left:calc(50% - 180px); z-index:10;}
+.result .ball .content .slider{width:300px; position:absolute; bottom:70px; left:calc(50% - 150px); text-align:center; font-family: 'BebasNeueBold'; color:#f2fa5d; font-size:27px; z-index:2;}
+.result .ball .content .slider span{background-image:url(../img/field.png); min-height:49px;  background-size:100% 100%; background-repeat: no-repeat; background-position: center center; padding-top:10px;  padding:5px; width:250px; display:block; }
+.result .ball .content .slider .middle{font-size:20px; padding-top:13px; line-height:22px;}
+.result .ball .content .slider .small{font-size:18px; line-height:20px; background-image:url(../img/field2.png); min-height:79px; padding-top:15px;}
+.result .ball .content .name{width:60%;  height:100px;  position:absolute; top:320px; left:calc(20%); text-align:center; font-family: 'BebasNeueBold'; color:#f2fa5d; font-size:66px; z-index:3;}
+.result .ball .content .middle{font-size:40px; padding-top:20px; line-height:42px; }
+.result .ball .content .small{font-size:40px; padding-top:0px; line-height:42px;}
+.result .area{width:calc(100% - 800px); position:relative; margin-bottom:20px; text-align:center;}
+.result .txt{font-size:14px; width:calc(100% - 830px); margin-left:30px;}
+.result .txt .line{height:2px; max-width:200px; background-color:#231f20;}
+.result .txt  .italic{font-style:italic; color:#231f20; font-size:20px;}
+.result .txt .social{margin-left:40px; margin-top:20px;}
+.result .logo-mobile{display:none;}
+
+/* Base for label styling */
+[type="radio"]{
+	outline:none;
+}
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+/* radio aspect */
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: -5px;
+  width: 42px; height: 42px;
+  background:url(../img/chekbox.png);
+  border:none;
+}
+.cadastro-quiz [type="radio"]:not(:checked) + label:before,
+.cadastro-quiz [type="radio"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: -5px;
+  width: 42px; height: 42px;
+  border-radius:42px;
+  -moz-border-radius:42px;
+  -webkit-border-radius:42px;
+  background:#fff;
+  border:none;
+}
+/* checked mark aspect */
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: -2px; left: 10px;
+  font-size: 30px;
+  color: #99a00e !important;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled radio */
+[type="radio"]:disabled:not(:checked) + label:before,
+[type="radio"]:disabled:checked + label:before {
+  box-shadow: none;
+  background-color: #ddd;
+}
+[type="radio"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="radio"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="radio"]:checked:focus + label:before,
+[type="radio"]:not(:checked):focus + label:before {
+
+}
+li [type="radio"]:checked{
+	background-color:#96c11f;	
+}
+
+[type="radio"]:checked:hover + label:before,
+[type="radio"]:not(:checked):hover + label:before {
+  
+}
+@media (max-width: 1200px) {
+	.home-quiz .draw{margin-top:-20px;}
+	.cadastro-quiz .btn-prosseguir{position:absolute; bottom:-30px; left:calc(50% - 200px);}
+	.result .ball{width:600px; height:550px; top:30px;}
+	.result .ball .content .name{top:250px; font-size:46px;}
+	.result .ball .content .go{bottom:60px;}
+	.result .ball .content .back{bottom:60px;}
+	.result .ball .content .slider{bottom:50px;}
+	.result .area{width:calc(100% - 600px);}
+	.result .txt{width:calc(100% - 630px);}
+	.result .container{min-height:600px;}
+}
+@media (max-width: 992px) {
+	.home-quiz{text-align:center;}
+	.home-quiz .txt{max-width:inherit; padding:30px;}
+	.home-quiz .btn{display:block; margin:auto;}
+	.home-quiz .draw{margin-top:0px;}
+	.cadastro-quiz .txt{max-width:inherit; padding:30px;}
+	.cadastro-quiz{text-align:center;}
+	.cadastro-quiz .box{margin:auto; margin-bottom:50px; padding:40px; padding-top:100px;}
+	.cadastro-quiz .box .text-right{text-align:left !important;}
+	.quiz ul{margin-left:30px}
+	.quiz .header .answer{left:220px;}
+	.result .area{width:100%;}
+	.result .txt{width:100%;}
+	.result .ball{position:relative; top:inherit; right:inherit; margin:auto; margin-top:20px;}
+	.result .area .text-right{text-align:center !important;}
+	.result .txt{text-align:center;}
+	.result .txt .social{margin-left:0px;}
+	.result .txt .line{max-width:inherit; width:90%;}
+}
+@media only screen and (max-width: 760px){
+	.cadastro-quiz .box{padding-bottom:150px;  padding-top:120px;}
+	.quiz .logo-mobile{display:block; margin:auto;}
+	.quiz .header{text-align:center; margin-bottom:40px;}
+	.quiz .header .answer{bottom:-70px; left:calc(50% - 230px);}
+	.quiz .box{height:auto; margin-bottom:50px;}
+	.quiz .character{width:150px; margin-bottom:40px;}
+	.quiz .buttons{height:150px; width:100%; text-align:center; left:0px; bottom:-30px;}
+	.quiz ul{padding:0px; margin:0px; }
+	.quiz li{margin-left:0px; padding:0px; margin-bottom:15px;}
+	.quiz label{font-size:20px;}
+	.quiz .question{max-width:inherit;}
+	.result .header{text-align:center;}
+	.result .ball{position:relative; top:inherit; right:inherit; margin:auto;}
+	.result .header .answer{margin-top:20px;}
+	.result .content{position:relative; left:inherit; top:inherit; padding:0px;}
+	.result .txt{padding:20px; max-width:inherit; text-align:center; margin-left:}
+	.result .txt .line{margin:auto;}
+	.result .area{width:100%; padding:20px; text-align:center;}
+	.result .logo-mobile{display:block; margin-bottom:10px; margin-top:10px; margin:auto;}
+	.result  .titulo{display:none;}
+	
+}
+@media only screen and (max-width: 600px){
+	.cadastro-quiz .box{background:none; padding:10px; margin-bottom:0px; height:auto; min-height:inherit;}
+	.cadastro-quiz input + label{margin-top:20px; margin-bottom:40px;}
+	.cadastro-quiz .btn-prosseguir{position:relative; bottom:inherit; left:inherit;}
+	.ddListContainer{display:block !important; width:100% !important;}
+	.quiz .buttons{height:100px; width:100%; left:0px; bottom:-20px;}
+	.quiz .buttons .go{position:absolute; top:0px; right:20px; width:200px;}
+	.quiz .buttons .back{position:absolute; top:0px; left:20px; z-index:1;}
+	.quiz .character{display:none;}
+	.quiz .box{padding-bottom:100px;}
+	.quiz .question{font-size:24px; line-height:30px;}
+	.quiz .header .answer{left:0px;}
+	.result .ball{margin-left:calc(50% - 270px);}
+	.result .container{overflow:hidden;}
+}
+
+/*FONTS*/
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url('../fonts/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeueBook.eot') format('embedded-opentype'),
+         url('../fonts/BebasNeueBook.woff2') format('woff2'),
+         url('../fonts/BebasNeueBook.woff') format('woff'),
+         url('../fonts/BebasNeueBook.ttf') format('truetype'),
+         url('../fonts/BebasNeueBook.svg#BebasNeueBook') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('../fonts/BebasNeueBold.eot');
+    src: url('../fonts/BebasNeueBold.eot') format('embedded-opentype'),
+         url('../fonts/BebasNeueBold.woff2') format('woff2'),
+         url('../fonts/BebasNeueBold.woff') format('woff'),
+         url('../fonts/BebasNeueBold.ttf') format('truetype'),
+         url('../fonts/BebasNeueBold.svg#BebasNeueBold') format('svg');
+}
